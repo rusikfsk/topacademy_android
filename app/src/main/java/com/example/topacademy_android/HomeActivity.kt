@@ -2,7 +2,6 @@ package com.example.topacademy_android
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,35 +14,32 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
+        val toolbar = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = getString(R.string.title_home)
+        toolbar.setNavigationOnClickListener { finish() }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.home_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-
-        val buttonCalculator = findViewById<Button>(R.id.buttonCalculator)
+        val buttonCalc = findViewById<Button>(R.id.buttonCalc)
         val buttonList = findViewById<Button>(R.id.buttonList)
         val buttonWeather = findViewById<Button>(R.id.buttonWeather)
 
-
-        buttonCalculator.setOnClickListener {
-            Log.d("HomeActivity", "Calculator button clicked")
-            val intent = Intent(this, CalculatorActivity::class.java)
-            startActivity(intent)
+        buttonCalc.setOnClickListener {
+            startActivity(Intent(this, CalculatorActivity::class.java))
         }
 
         buttonList.setOnClickListener {
-            Log.d("HomeActivity", "List button clicked")
-            val intent = Intent(this, ListActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, ListActivity::class.java))
         }
 
         buttonWeather.setOnClickListener {
-            Log.d("HomeActivity", "Weather button clicked")
-            val intent = Intent(this, WeatherActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, WeatherActivity::class.java))
         }
     }
 }

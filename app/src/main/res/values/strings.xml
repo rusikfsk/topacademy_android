@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TopAcademy_android</string>
 
@@ -19,6 +20,7 @@
     <string name="add">+</string>
     <string name="equals">=</string>
     <string name="dot">.</string>
+
     <string name="btn_clear">C</string>
     <string name="btn_divide">÷</string>
     <string name="btn_multiply">×</string>
@@ -27,6 +29,9 @@
     <string name="btn_add">+</string>
     <string name="btn_equals">=</string>
     <string name="btn_dot">.</string>
+    <string name="btn_minus">−</string>
+    <string name="btn_plus">+</string>
+
     <string name="btn_0">0</string>
     <string name="btn_1">1</string>
     <string name="btn_2">2</string>
@@ -38,4 +43,12 @@
     <string name="btn_8">8</string>
     <string name="btn_9">9</string>
 
+    <string name="title_home">Home</string>
+    <string name="title_list">Cars</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_weather">Weather</string>
+    <string name="currency_symbol">$</string>
+    <string name="cost_format">%1$s%2$,d</string>
+    <string name="car_title_format">%1$s %2$s (%3$d)</string>
+    <string name="car_image_cd">%1$s %2$s image</string>
 </resources>
