@@ -12,6 +12,12 @@ class CalculatorActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_calculator)
 
+        val toolbar = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = getString(R.string.title_calculator)
+        toolbar.setNavigationOnClickListener { finish() }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.calculator_main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
