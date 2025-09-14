@@ -12,15 +12,8 @@
     <string name="password">Password</string>
 
     <string name="initial_result">0</string>
-    <string name="clear">C</string>
-    <string name="divide">÷</string>
-    <string name="multiply">×</string>
-    <string name="backspace">←</string>
-    <string name="subtract">−</string>
-    <string name="add">+</string>
-    <string name="equals">=</string>
-    <string name="dot">.</string>
 
+    <!-- Calculator buttons -->
     <string name="btn_clear">C</string>
     <string name="btn_divide">÷</string>
     <string name="btn_multiply">×</string>
@@ -43,21 +36,37 @@
     <string name="btn_8">8</string>
     <string name="btn_9">9</string>
 
+    <!-- Titles -->
     <string name="title_home">Home</string>
     <string name="title_list">Cars</string>
     <string name="title_calculator">Calculator</string>
     <string name="title_weather">Weather</string>
+
+    <!-- Cars -->
     <string name="currency_symbol">$</string>
     <string name="cost_format">%1$s%2$,d</string>
     <string name="car_title_format">%1$s %2$s (%3$d)</string>
     <string name="car_image_cd">%1$s %2$s image</string>
+    <string name="car_desc_sedan">Reliable family sedan</string>
+    <string name="car_desc_sporty">Sporty compact sedan</string>
+    <string name="car_desc_ev">Electric with Autopilot</string>
+    <string name="car_desc_premium">Premium interior</string>
+    <string name="car_desc_crossover">Compact crossover</string>
+    <string name="car_desc_luxury">Luxury class</string>
 
+    <!-- Weather -->
     <string name="weather_loading">Loading…</string>
     <string name="weather_empty">No data</string>
     <string name="weather_error">Failed to load weather</string>
+    <string name="weather_error_reason">Failed to load: %1$s</string>
+    <string name="weather_location_moscow">Moscow, Russia</string>
     <string name="date_pattern">d MMM, EEE</string>
     <string name="temp_range_format">%1$d° / %2$d°</string>
     <string name="wind_format">wind %1$dm/s</string>
+    <string name="temp_c">%1$d°C</string>
+    <string name="wind_ms">%1$d m/s</string>
+
+
     <string name="w_clear">Clear</string>
     <string name="w_clouds">Clouds</string>
     <string name="w_fog">Fog</string>
@@ -65,8 +74,4 @@
     <string name="w_snow">Snow</string>
     <string name="w_thunder">Thunderstorm</string>
     <string name="w_unknown">Unknown</string>
-    <string name="weather_location_moscow">Moscow, Russia</string>
-
-    <string name="weather_error_reason">Failed to load: %1$s</string>
-
 </resources>

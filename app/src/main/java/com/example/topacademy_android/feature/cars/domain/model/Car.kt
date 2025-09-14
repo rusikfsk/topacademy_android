@@ -1,4 +1,4 @@
-package com.example.topacademy_android
+package com.example.topacademy_android.feature.cars.domain.model
 
 data class Car(
     val brand: String,
