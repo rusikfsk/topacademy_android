@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.topacademy_android.feature.home.presentation.HomeFragment"
+        android:label="@string/title_home">
+        <action
+            android:id="@+id/action_home_to_weather"
+            app:destination="@id/weatherFragment"/>
+        <action
+            android:id="@+id/action_home_to_calculator"
+            app:destination="@id/calculatorFragment"/>
+        <action
+            android:id="@+id/action_home_to_cars"
+            app:destination="@id/carsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.topacademy_android.feature.weather.presentation.WeatherFragment"
+        android:label="@string/title_weather">
+        <action
+            android:id="@+id/action_weather_to_detail"
+            app:destination="@id/weatherDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="com.example.topacademy_android.feature.weather.presentation.WeatherDetailFragment"
+        android:label="@string/title_weather">
+        <argument android:name="date"    app:argType="string"  android:defaultValue=""/>
+        <argument android:name="weather" app:argType="string"  android:defaultValue=""/>
+        <argument android:name="tMax"    app:argType="integer" android:defaultValue="0"/>
+        <argument android:name="tMin"    app:argType="integer" android:defaultValue="0"/>
+        <argument android:name="wind"    app:argType="integer" android:defaultValue="0"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.topacademy_android.feature.calculator.presentation.CalculatorFragment"
+        android:label="@string/title_calculator" />
+
+    <fragment
+        android:id="@+id/carsFragment"
+        android:name="com.example.topacademy_android.feature.cars.presentation.CarsFragment"
+        android:label="@string/title_list" />
+</navigation>
