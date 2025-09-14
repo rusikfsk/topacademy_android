@@ -1,9 +1,12 @@
-package com.example.topacademy_android
+package com.example.topacademy_android.feature.cars.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.topacademy_android.R
 import com.example.topacademy_android.databinding.ActivityListBinding
+import com.example.topacademy_android.feature.cars.domain.model.Car
+import com.example.topacademy_android.feature.cars.presentation.adapter.CarAdapter
 
 class ListActivity : AppCompatActivity() {
 

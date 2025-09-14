@@ -1,9 +1,11 @@
-package com.example.topacademy_android
+package com.example.topacademy_android.feature.cars.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.topacademy_android.R
 import com.example.topacademy_android.databinding.ItemCarBinding
+import com.example.topacademy_android.feature.cars.domain.model.Car
 
 class CarAdapter(private val items: List<Car>) : RecyclerView.Adapter<CarAdapter.VH>() {
 

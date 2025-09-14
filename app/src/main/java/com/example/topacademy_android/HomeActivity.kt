@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
+import com.example.topacademy_android.feature.calculator.presentation.CalculatorActivity
+import com.example.topacademy_android.feature.cars.presentation.ListActivity
+import com.example.topacademy_android.feature.weather.presentation.WeatherActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +42,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
         buttonWeather.setOnClickListener {
-            startActivity(Intent(this, WeatherActivity::class.java))
+            startActivity(
+                Intent(
+                    this,
+                    com.example.topacademy_android.feature.weather.presentation.WeatherActivity::class.java
+                )
+            )
         }
     }
 }

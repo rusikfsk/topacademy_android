@@ -2,61 +2,72 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/_24dp">
+    android:padding="@dimen/_16dp">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
-        style="@style/AppToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="@dimen/detail_icon"
-        android:layout_height="@dimen/detail_icon"
+        android:layout_width="@dimen/car_item_image"
+        android:layout_height="@dimen/car_item_image"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_24dp"/>
+        android:contentDescription="@string/w_unknown"
+        android:src="@drawable/ic_weather_sunny"/>
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/TextHeadline"
-        app:layout_constraintTop_toBottomOf="@id/icon"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        app:layout_constraintStart_toEndOf="@id/icon"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_16dp"/>
+        android:layout_marginStart="@dimen/_12dp"/>
 
     <TextView
-        android:id="@+id/desc"
-        android:layout_width="wrap_content"
+        android:id="@+id/weather"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/TextBody"
         app:layout_constraintTop_toBottomOf="@id/date"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_4dp"/>
+
+    <TextView
+        android:id="@+id/tMax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/weather"
+        app:layout_constraintStart_toStartOf="@id/weather"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/_8dp"/>
 
     <TextView
-        android:id="@+id/temp"
-        android:layout_width="wrap_content"
+        android:id="@+id/tMin"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/TextCost"
-        app:layout_constraintTop_toBottomOf="@id/desc"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/_16dp"/>
+        app:layout_constraintTop_toBottomOf="@id/tMax"
+        app:layout_constraintStart_toStartOf="@id/weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_4dp"/>
 
     <TextView
-        android:id="@+id/extra"
-        android:layout_width="wrap_content"
+        android:id="@+id/wind"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/TextBody"
-        app:layout_constraintTop_toBottomOf="@id/temp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tMin"
+        app:layout_constraintStart_toStartOf="@id/weather"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/_8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

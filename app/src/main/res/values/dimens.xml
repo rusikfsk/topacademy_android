@@ -7,16 +7,18 @@
     <dimen name="_24dp">24dp</dimen>
     <dimen name="_32dp">32dp</dimen>
     <dimen name="_48dp">48dp</dimen>
+
     <dimen name="car_item_image">80dp</dimen>
+    <dimen name="weather_icon">48dp</dimen>
+    <dimen name="detail_icon">96dp</dimen>
+
     <dimen name="text_calc_result">36sp</dimen>
     <dimen name="text_h1">28sp</dimen>
     <dimen name="text_card_title">18sp</dimen>
     <dimen name="text_body">14sp</dimen>
     <dimen name="text_cost">16sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
 
     <dimen name="card_radius">16dp</dimen>
     <dimen name="card_stroke">0dp</dimen>
-    <dimen name="weather_icon">48dp</dimen>
-    <dimen name="detail_icon">96dp</dimen>
-
 </resources>
